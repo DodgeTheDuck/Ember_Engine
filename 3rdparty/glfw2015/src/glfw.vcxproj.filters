@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_tls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\winmm_joystick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\wgl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfw2015\src\glfw_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\include\GLFW\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\win32_tls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\winmm_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\wgl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{98647611-0A97-4DB4-B74E-3BD32BAF5BB8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8F563FF0-0B0F-4181-90E3-CF2DEC62E702}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

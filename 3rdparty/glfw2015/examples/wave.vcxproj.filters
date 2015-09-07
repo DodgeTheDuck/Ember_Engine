@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\examples\wave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{98647611-0A97-4DB4-B74E-3BD32BAF5BB8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
