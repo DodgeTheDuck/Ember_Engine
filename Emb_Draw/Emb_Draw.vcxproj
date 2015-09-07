@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA0A4623-FCEF-4A24-9631-6786384DBD41}</ProjectGuid>
+    <RootNamespace>Emb_Draw</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\libtga-1.0.1\src;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glm\glm;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glew-1.13.0\include;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\Emb_Typing;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\libtga-1.0.1\Debug;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glew-1.13.0\lib\Release\Win32;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfw2015\src\Debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin_dbg\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\libtga-1.0.1\src;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glm\glm;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glew-1.13.0\include;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\Emb_Typing;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfwsrc\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\libtga-1.0.1\Debug;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glew-1.13.0\lib\Release\Win32;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glfw2015\src\Debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin_dbg\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;glu32.lib;libtga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;glu32.lib;libtga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="c_draw_batcher.h" />
+    <ClInclude Include="c_draw_camera.h" />
+    <ClInclude Include="c_draw_defs.h" />
+    <ClInclude Include="c_draw_object.h" />
+    <ClInclude Include="c_draw_polytope.h" />
+    <ClInclude Include="c_draw_primitive.h" />
+    <ClInclude Include="c_draw_scene.h" />
+    <ClInclude Include="c_draw_setup.h" />
+    <ClInclude Include="c_draw_shader.h" />
+    <ClInclude Include="c_draw_sprite.h" />
+    <ClInclude Include="c_draw_text.h" />
+    <ClInclude Include="c_draw_texture.h" />
+    <ClInclude Include="c_draw_texture_cache.h" />
+    <ClInclude Include="c_draw_vertex.h" />
+    <ClInclude Include="c_draw_window.h" />
+    <ClInclude Include="lodepng.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c_draw_batcher.cpp" />
+    <ClCompile Include="c_draw_camera.cpp" />
+    <ClCompile Include="c_draw_object.cpp" />
+    <ClCompile Include="c_draw_polytope.cpp" />
+    <ClCompile Include="c_draw_scene.cpp" />
+    <ClCompile Include="c_draw_setup.cpp" />
+    <ClCompile Include="c_draw_shader.cpp" />
+    <ClCompile Include="c_draw_sprite.cpp" />
+    <ClCompile Include="c_draw_text.cpp" />
+    <ClCompile Include="c_draw_texture.cpp" />
+    <ClCompile Include="c_draw_texture_cache.cpp" />
+    <ClCompile Include="c_draw_window.cpp" />
+    <ClCompile Include="lodepng.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Emb_Testbed\frag.glsl" />
+    <None Include="..\Emb_Testbed\vert.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
