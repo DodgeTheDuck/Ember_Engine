@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@5 @7 Type=s_batch Member=object)" Category="CodeSchema_Field" Bounds="-9661.23284966635,-9962.65611237795,73.876666666667,26" CodeSchemaProperty_IsPublic="True" Icon="fbbd44a5-2fc8-4bd9-ac89-51b4db64422b" Label="object" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_Type="Object *" UseManualLocation="True" />
+    <Node Id="(@5 @7 Type=s_batch Member=texture)" Category="CodeSchema_Field" Bounds="-9674.68254909994,-9879.09423675785,78.1566666666658,26" CodeSchemaProperty_IsPublic="True" Icon="fbbd44a5-2fc8-4bd9-ac89-51b4db64422b" Label="texture" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_Type="uint" UseManualLocation="True" />
+    <Node Id="@10" Category="CodeSchema_Field" Bounds="-9108.63950655953,-10003.8571248531,76.6833333333343,26" CodeSchemaProperty_IsPrivate="True" Icon="ef3870ab-0f65-4c07-912a-c113470196be" Label="_states" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_Type="std::stack&lt;IState*&gt;" UseManualLocation="True" />
+    <Node Id="@11" Category="CodeSchema_Method" Bounds="-9321.17003255208,-10009.1281731462,75.6066666666666,26" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsVirtual="True" Icon="11f12fc4-cb95-44ce-aac2-bd15b2bbe21a" Label="Draw‎(‎)" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_IsPure="True" NativeProvider_ReturnType="void" UseManualLocation="True" />
+    <Node Id="@12" Category="CodeSchema_Method" Bounds="-9569.60773835286,-10031.2619442708,75.6066666666666,26" CodeSchemaProperty_IsPublic="True" Icon="11f12fc4-cb95-44ce-aac2-bd15b2bbe21a" Label="Draw‎(‎)" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_ReturnType="void" UseManualLocation="True" />
+    <Node Id="@13" Category="CodeSchema_Method" Bounds="-9215.56306966146,-10006.765625,68.9400000000023,26" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsVirtual="True" Icon="11f12fc4-cb95-44ce-aac2-bd15b2bbe21a" Label="Tick‎(‎)" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_IsPure="True" NativeProvider_ReturnType="void" UseManualLocation="True" />
+    <Node Id="@15" Category="CodeSchema_Class" Bounds="-9438.21711354896,-10009.1279296875,80.8366666666661,26" CodeSchemaProperty_IsPublic="True" Icon="ebc78f0f-8a27-498f-a656-54fcb0e11ff7" Label="Batcher" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_TypeName="Batcher" UseManualLocation="True" />
+    <Node Id="@16" Category="CodeSchema_Class" Bounds="-9243.99070935575,-10099.2179716829,76.9000000000015,26" CodeSchemaProperty_IsPublic="True" Icon="ebc78f0f-8a27-498f-a656-54fcb0e11ff7" Label="Engine" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_TypeName="Engine" UseManualLocation="True" />
+    <Node Id="@17" Category="CodeSchema_Struct" Bounds="-9551.85540871094,-9924.3610759424,80.6333333333314,26" CodeSchemaProperty_IsPublic="True" Icon="3890a165-639a-4705-ba51-e3308fbf92b9" Label="s_batch" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_TypeName="s_batch" UseManualLocation="True" />
+    <Node Id="@19" Category="CodeSchema_Class" Bounds="-9564.7950390625,-10087.2620442708,72.260000000002,26" CodeSchemaProperty_IsPublic="True" Icon="ebc78f0f-8a27-498f-a656-54fcb0e11ff7" Label="Scene" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_TypeName="Scene" UseManualLocation="True" />
+    <Node Id="@21" Category="CodeSchema_Class" Bounds="-9124.64333333333,-10062.7657189401,120.286666666667,26" CodeSchemaProperty_IsPublic="True" Icon="ebc78f0f-8a27-498f-a656-54fcb0e11ff7" Label="StateController" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_TypeName="StateController" UseManualLocation="True" />
+    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="-9190.02618444367,-10155.8663539779,70.4000000000015,26" Icon="b5a2dc72-a825-4355-b938-71d39176ded0" Label="CORE" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@8" Category="CodeSchema_Namespace" Bounds="-9463.69935546875,-10143.2621442708,74.7200000000012,26" Icon="b5a2dc72-a825-4355-b938-71d39176ded0" Label="DRAW" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@9" Category="CodeSchema_Field" Bounds="-9441.22207537832,-9953.1279296875,86.9099999999999,26" CodeSchemaProperty_IsPrivate="True" Icon="ef3870ab-0f65-4c07-912a-c113470196be" Label="_batches" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" NativeProvider_Type="std::vector&lt;s_batch*&gt;" UseManualLocation="True" />
+    <Node Id="CustomState" Bounds="-9270.81343909035,-9939.98967963865,90.5366666666669,25.9599999999991" Label="Custom State" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="CustomState" Bounds="-9185.66031569515,-9977.857421875,83.7523187506904,34.4440093711273" />
+    <Link Source="@11" Target="@15" Bounds="-9348.3804468823,-9996.1279296875,27.2104143302131,0" />
+    <Link Source="@12" Target="@9" Bounds="-9509.5033377448,-10005.26171875,81.6595188497904,47.6013226419054" />
+    <Link Source="@15" Target="@9" Category="Contains" Bounds="-9397.79145695166,-9983.1279296875,0.0119072808247438,21.0000014467678" />
+    <Link Source="@16" Target="@11" Bounds="-9266.25271947033,-10073.2177734375,49.4822322899654,57.2790162082729" />
+    <Link Source="@16" Target="@13" Bounds="-9202.10242881226,-10073.2177734375,15.2712427434708,57.7512112234235" />
+    <Link Source="@17" Target="(@5 @7 Type=s_batch Member=object)" Category="Contains" Bounds="-9579.80978745765,-9934.54790220342,30.2442398211733,10.2717571476514" />
+    <Link Source="@17" Target="(@5 @7 Type=s_batch Member=texture)" Category="Contains" Bounds="-9591.52043628847,-9898.361328125,44.3521077057194,16.1826909045831" />
+    <Link Source="@17" Target="@9" Bounds="-9471.22825116939,-9926.97317291785,21.4346797574854,5.41969996332227" />
+    <Link Source="@19" Target="@12" Category="Contains" Bounds="-9530.57186867757,-10061.26171875,1.17804529725436,21.0138836553142" />
+    <Link Source="@21" Target="@10" Category="Contains" Bounds="-9068.13683126483,-10036.765625,2.35734782595682,23.9514797974316" />
+    <Link Source="@4" Target="@16" Category="Contains" Bounds="-9187.8989153522,-10129.8662109375,21.4346418360437,23.9429378141231" />
+    <Link Source="@4" Target="@21" Bounds="-9142.2135614668,-10129.8662109375,58.8339614457709,60.6410151460386" />
+    <Link Source="@8" Target="@15" Bounds="-9423.5732600795,-10117.26171875,21.1352784029659,99.330854715321" />
+    <Link Source="@8" Target="@19" Bounds="-9497.01588836173,-10117.2621442708,46.9223987625246,25.6793693494728" />
+    <Link Source="CustomState" Target="@11" Bounds="-9266.71657396442,-9976.22491511095,30.312576282653,36.2346612047022" />
+    <Link Source="CustomState" Target="@13" Bounds="-9216.90198244166,-9973.27453488021,22.1641199253045,33.2842809739559" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="Class" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_Field" Label="Field" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Fields" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Methods" />
+    <Category Id="CodeSchema_Namespace" Label="Namespace" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="CodeSchema_Namespace" NavigationActionLabel="Namespaces" />
+    <Category Id="CodeSchema_Struct" Label="Struct" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Struct" NavigationActionLabel="Structs" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Types" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsVirtual" Label="Is Virtual" Description="Flag to indicate the method can be overridden" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="NativeProvider_IsPure" Label="IsPure" Description="IsPure" DataType="System.Boolean" />
+    <Property Id="NativeProvider_ReturnType" Label="Return Type" Description="Return Type" DataType="System.String" />
+    <Property Id="NativeProvider_Type" Label="Type" Description="Type" DataType="System.String" />
+    <Property Id="NativeProvider_TypeName" Label="TypeName" Description="TypeName" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="File" Label="File" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(3a9e135f-f493-44f0-8094-de616c13f00a.OutputPathUri)" />
+    <Alias n="2" Uri="File=$(VsSolutionUri)/Emb_Core/c_core_engine.h" />
+    <Alias n="3" Id="Namespace=CORE" />
+    <Alias n="4" Id="(@1 @2 @3)" />
+    <Alias n="5" Uri="Assembly=$(fa0a4623-fcef-4a24-9631-6786384dbd41.OutputPathUri)" />
+    <Alias n="6" Uri="File=$(VsSolutionUri)/Emb_Draw/c_draw_batcher.cpp" />
+    <Alias n="7" Id="Namespace=DRAW" />
+    <Alias n="8" Id="(@5 @6 @7)" />
+    <Alias n="9" Id="(@5 @7 Type=Batcher Member=_batches)" />
+    <Alias n="10" Id="(@1 @3 Type=StateController Member=_states)" />
+    <Alias n="11" Id="(@1 @3 Type=IState Member=Draw)" />
+    <Alias n="12" Id="(@5 @7 Type=Scene Member=Draw)" />
+    <Alias n="13" Id="(@1 @3 Type=IState Member=Tick)" />
+    <Alias n="14" Uri="File=$(VsSolutionUri)/Emb_Draw/c_draw_batcher.h" />
+    <Alias n="15" Id="(@5 @14 @7 Type=Batcher)" />
+    <Alias n="16" Id="(@1 @2 @3 Type=Engine)" />
+    <Alias n="17" Id="(@5 @14 @7 Type=s_batch)" />
+    <Alias n="18" Uri="File=$(VsSolutionUri)/Emb_Draw/c_draw_scene.h" />
+    <Alias n="19" Id="(@5 @18 @7 Type=Scene)" />
+    <Alias n="20" Uri="File=$(VsSolutionUri)/Emb_Core/c_core_state_controller.h" />
+    <Alias n="21" Id="(@1 @20 @3 Type=StateController)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="3a9e135f-f493-44f0-8094-de616c13f00a.OutputPathUri" Value="file:///C:/Users/dunca/Documents/Visual Studio 2015/Projects/Ember_Engine/bin_dbg/Emb_Core.dll" />
+    <Path Id="fa0a4623-fcef-4a24-9631-6786384dbd41.OutputPathUri" Value="file:///C:/Users/dunca/Documents/Visual Studio 2015/Projects/Ember_Engine/bin_dbg/Emb_Draw.dll" />
+    <Path Id="VsSolutionUri" Value="file:///C:/Users/dunca/Documents/Visual Studio 2015/Projects/Ember_Engine" />
+  </Paths>
+</DirectedGraph>

@@ -39,8 +39,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glm\glm;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glew-1.13.0\include;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\Emb_Typing;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\glew-1.13.0\lib\Release\Win32;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\3rdparty\GLFW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\3rdparty\glm\glm;..\3rdparty\glew-1.13.0\include;..\Emb_Typing;..\3rdparty\GLFW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\3rdparty\glew-1.13.0\lib\Release\Win32;..\3rdparty\GLFW\lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin_dbg\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

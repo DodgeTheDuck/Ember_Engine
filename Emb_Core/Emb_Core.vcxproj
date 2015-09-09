@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin_dbg\</OutDir>
-    <IncludePath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\Emb_Typing;C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\Emb_Draw;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\dunca\Documents\Visual Studio 2015\Projects\Ember_Engine\bin_dbg;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\Emb_Typing;..\Emb_Draw;$(IncludePath)</IncludePath>
+    <LibraryPath>..\bin_dbg;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin_dbg\</OutDir>
@@ -89,6 +89,9 @@
     <ClCompile Include="c_core_setup.cpp" />
     <ClCompile Include="c_core_engine.cpp" />
     <ClCompile Include="c_state_controller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,7 +20,13 @@ namespace CORE {
 	//~# CORE::FuncSequencer
 	//~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
 	//~# Implementation: Class
-	//~# 
+	//~# Notes: Came up with this out of nowhere, seems to be pretty effective 'though I haven't used it
+	//~#	-enough to know how reliable/efficient it is. I'm also not using it for the main reason I
+	//~#	-initially made it. I wanted to generalise my frame timing code so i'm not rewriting timing stuff
+	//~#	-and realised I could make make a Class that calls a given function pointer at whatever interval
+	//~#	-or just fire it off once after a set amount of time. I will probably go back to using this for the main
+	//~#	-loop when I have a stable base to test it on. Why Sequencer? Cause It used to sequence my Draw/Tick calls
+	//~#	-and the name stuck that's why.
 
 	template< class T >
 	class EMB_CORE_API FuncSequencer {
