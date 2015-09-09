@@ -90,9 +90,6 @@
     <ClCompile Include="c_core_engine.cpp" />
     <ClCompile Include="c_state_controller.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

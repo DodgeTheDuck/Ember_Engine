@@ -19,7 +19,7 @@ namespace CORE {
 	//~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
 	//~# CORE::FuncSequencer
 	//~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
-	//~# Implementation: Class
+	//~# Implementation: Template Class
 	//~# Notes: Came up with this out of nowhere, seems to be pretty effective 'though I haven't used it
 	//~#	-enough to know how reliable/efficient it is. I'm also not using it for the main reason I
 	//~#	-initially made it. I wanted to generalise my frame timing code so i'm not rewriting timing stuff
@@ -27,12 +27,15 @@ namespace CORE {
 	//~#	-or just fire it off once after a set amount of time. I will probably go back to using this for the main
 	//~#	-loop when I have a stable base to test it on. Why Sequencer? Cause It used to sequence my Draw/Tick calls
 	//~#	-and the name stuck that's why.
+	//~#	-Also due to the fact this is a template class, all code must be written within the header, it's ugly but
+	//~#	-i can't help it.
 
 	template< class T >
 	class EMB_CORE_API FuncSequencer {
 
 		public:
 
+		//~# Do we call the function at every interval or just once.
 		enum e_fireType {
 			FIRE_REPEAT,
 			FIRE_ONCE
@@ -43,6 +46,7 @@ namespace CORE {
 			_secondTimer.zero( );
 		}
 
+		//~# Set the function that this object calls, ref is the CLASS that owns the function.
 		void SetFunction( const T& ref, void(T::*fp)(), long double callsPerSecond, e_fireType fireType = FIRE_REPEAT ) {
 			_func = std::bind( fp, ref );
 			_fireType = fireType;
