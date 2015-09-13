@@ -1,12 +1,15 @@
 
 #include "c_draw_window.h"
+#include <functional>
 #include <GLFW\glfw3.h>
+#include "c_draw_input.h"
 
 namespace DRAW {
 
 	Window::Window( TYPE::size_i size ) {
 		_instance = glfwCreateWindow( size.w, size.h, "Ember", NULL, NULL );
 		_size = size;
+		InitInput( this );
 	}
 
 	void Window::HandleEvents( ) {

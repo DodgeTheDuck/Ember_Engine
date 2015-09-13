@@ -7,7 +7,7 @@
 
 namespace DRAW {
 
-	class EMB_DRAW_API PRect : public Polytope {
+	class PRect : public Polytope {
 
 		public:
 
@@ -27,7 +27,7 @@ namespace DRAW {
 
 	};
 
-	class EMB_DRAW_API PCube : public Polytope {
+	class PCube : public Polytope {
 
 		public:
 		PCube( float scale, Texture * texture, TYPE::color_f4 color = { 1.0, 1.0, 1.0, 1.0 } ) {

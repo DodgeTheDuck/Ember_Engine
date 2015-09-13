@@ -13,7 +13,6 @@
 
 namespace DRAW {
 
-	glm::mat4 _view;
 	glm::mat4 _model;
 	glm::mat4 _projection;
 
@@ -36,7 +35,7 @@ namespace DRAW {
 
 		glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
 
-		glm::mat4 MVP = _projection * _view * _model;
+		glm::mat4 MVP = _projection * glm::mat4( *_camera->GetViewMatrix( ) ) * _model;
 
 		_sceneShader->UniformMatrix4( "MVP", glm::value_ptr( MVP ) );
 		_sceneShader->UseProgram( );

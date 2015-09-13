@@ -12,5 +12,3 @@
 #else
 #define EMB_CORE_API __declspec(dllimport)
 #endif
-
-#define real float

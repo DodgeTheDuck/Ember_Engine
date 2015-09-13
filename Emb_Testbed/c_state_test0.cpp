@@ -11,6 +11,7 @@
 #include <c_draw_batcher.h>
 #include <c_draw_texture.h>
 #include <c_draw_text.h>
+#include <c_draw_input.h>
 
 DRAW::Window * window;
 DRAW::Scene * scene;
@@ -49,7 +50,7 @@ void Test0::Tick( ) {
 	if( window->ShouldClose( ) ) {
 		CORE::Engine::Instance( )->Shutdown( );
 	}
-	x -= 0.01;
+	if( DRAW::Controls::forward ) x -= 0.1;
 }
 
 void Test0::Draw( ) {

@@ -7,7 +7,7 @@
 
 namespace DRAW {
 
-	struct s_polyData {
+	struct EMB_DRAW_API s_polyData {
 		s_polyData( uint nVerts, uint nIndices ) { AllocateMemory( nVerts, nIndices ); }
 		float * point;
 		float * color;

@@ -53,6 +53,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DRAW_DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -78,6 +79,7 @@
     <ClInclude Include="c_draw_batcher.h" />
     <ClInclude Include="c_draw_camera.h" />
     <ClInclude Include="c_draw_defs.h" />
+    <ClInclude Include="c_draw_input.h" />
     <ClInclude Include="c_draw_object.h" />
     <ClInclude Include="c_draw_polytope.h" />
     <ClInclude Include="c_draw_primitive.h" />
@@ -95,6 +97,7 @@
   <ItemGroup>
     <ClCompile Include="c_draw_batcher.cpp" />
     <ClCompile Include="c_draw_camera.cpp" />
+    <ClCompile Include="c_draw_input.cpp" />
     <ClCompile Include="c_draw_object.cpp" />
     <ClCompile Include="c_draw_polytope.cpp" />
     <ClCompile Include="c_draw_scene.cpp" />

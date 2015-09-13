@@ -15,34 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="c_core_defs.h">
+    <ClInclude Include="c_math_defs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="c_core_setup.h">
+    <ClInclude Include="c_math_vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="c_core_engine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="c_core_state.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="c_core_func_sequencer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="c_core_state_controller.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="c_core_setup.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c_core_engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c_core_state_controller.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

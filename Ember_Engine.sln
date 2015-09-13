@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Layout.dgml = Layout.dgml
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Emb_Math", "Emb_Math\Emb_Math.vcxproj", "{2FD2C9F7-C8F1-485F-A043-95BA174585EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -67,6 +69,14 @@ Global
 		{13185CBE-B6C5-4B60-BED5-FE2B8EDED1E1}.Release|Win32.Build.0 = Release|Win32
 		{13185CBE-B6C5-4B60-BED5-FE2B8EDED1E1}.Release|x64.ActiveCfg = Release|x64
 		{13185CBE-B6C5-4B60-BED5-FE2B8EDED1E1}.Release|x64.Build.0 = Release|x64
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Debug|Win32.Build.0 = Debug|Win32
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Debug|x64.ActiveCfg = Debug|x64
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Debug|x64.Build.0 = Debug|x64
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Release|Win32.ActiveCfg = Release|Win32
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Release|Win32.Build.0 = Release|Win32
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Release|x64.ActiveCfg = Release|x64
+		{2FD2C9F7-C8F1-485F-A043-95BA174585EC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

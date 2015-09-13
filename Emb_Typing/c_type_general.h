@@ -5,20 +5,21 @@
 #include <string>
 
 typedef unsigned int uint;
+typedef double real;
 
 namespace TYPE {
 
 	typedef std::string string;
 
 	struct EMB_TYPE_API point_f2 {
-		float x;
-		float y;
+		real x;
+		real y;
 	};
 
 	struct EMB_TYPE_API point_f3 {
-		float x;
-		float y;
-		float z;
+		real x;
+		real y;
+		real z;
 	};
 
 	struct EMB_TYPE_API size_i {
@@ -27,17 +28,17 @@ namespace TYPE {
 	};
 
 	struct EMB_TYPE_API color_f4 {
-		float r;
-		float g;
-		float b;
-		float a;
+		real r;
+		real g;
+		real b;
+		real a;
 	};
 
 	struct EMB_TYPE_API rect_f {
-		float left;
-		float top;
-		float right;
-		float bottom;
+		real left;
+		real top;
+		real right;
+		real bottom;
 	};
 
 }

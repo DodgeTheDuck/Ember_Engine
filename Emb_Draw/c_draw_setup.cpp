@@ -4,7 +4,7 @@
 #define GLFW_INCLUDE_GLU
 #include <gl\glew.h>
 #include <GLFW\glfw3.h>
-
+#include "c_draw_input.h"
 
 namespace DRAW {
 
