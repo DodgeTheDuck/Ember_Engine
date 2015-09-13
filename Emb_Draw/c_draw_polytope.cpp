@@ -21,7 +21,7 @@ namespace DRAW {
 			unsigned int texIndex = i * VERT_TEX_SIZE;
 			memcpy( &data->point[posIndex], &_vertices[i]->pos, sizeof( float ) * VERT_POS_SIZE );
 			memcpy( &data->color[colIndex], &_vertices[i]->col, sizeof( float ) * VERT_COL_SIZE );
-			memcpy( &data->tex[texIndex],	&_vertices[i]->tex, sizeof( float ) * VERT_TEX_SIZE );
+			memcpy( &data->tex[texIndex], &_vertices[i]->tex, sizeof( float ) * VERT_TEX_SIZE );
 		}
 		memcpy( &data->indices[0], &_indices[0], sizeof( uint ) * _indices.size( ) );
 		return data;
@@ -40,7 +40,8 @@ namespace DRAW {
 	}
 
 	Polytope::~Polytope( ) {
-
+		_vertices.clear( );
+		_indices.clear( );
 	}
 
 }

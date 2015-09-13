@@ -3,6 +3,7 @@
 #include "c_draw_polytope.h"
 #include "c_draw_object.h"
 #include "c_draw_texture_cache.h"
+#include "c_draw_scene.h"
 #include <GLFW\glfw3.h>
 #include <iostream>
 
@@ -46,6 +47,23 @@ namespace DRAW {
 			batch->object->Draw( );
 			batch->object->~Object( );
 		}
+		_batches.clear( );
+	}
+
+	s_batch * Batcher::GetBatch( uint index ) {
+		s_batch * batch = _batches[index];
+		batch->object->BuildVAO( );
+		glBindTexture( GL_TEXTURE_2D, batch->texture );
+		batch->object->Draw( );
+		batch->object->~Object( );
+		return batch;
+	}
+
+	uint Batcher::Count( ) {
+		return _batches.size( );
+	}
+
+	void Batcher::Clear( ) {
 		_batches.clear( );
 	}
 

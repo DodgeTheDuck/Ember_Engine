@@ -27,7 +27,7 @@ namespace DRAW {
 		_n_verts += data->vertCount;
 		_n_indices += data->indexCount;
 
-		delete(data);
+		delete( data );
 
 	}
 
@@ -81,6 +81,11 @@ namespace DRAW {
 	}
 
 	Object::~Object( ) {
+
+		//free( _elements );
+		//free( _points );
+		//free( _tex );
+		//free( &_cols );
 
 		glDeleteVertexArrays( 1, &_vaoIndex );
 		glDeleteBuffers( 1, &_pointVBO );

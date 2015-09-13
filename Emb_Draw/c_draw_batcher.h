@@ -8,6 +8,7 @@ namespace DRAW {
 
 	class Polytope;
 	class Object;
+	class Scene;
 
 	struct s_batch {
 
@@ -22,7 +23,10 @@ namespace DRAW {
 		public:
 
 		void Batch( Polytope * poly );
+		s_batch * GetBatch( uint index );
 		void DrawAll( );
+		uint Count( );
+		void Clear( );
 
 		static Batcher * Instance( );
 

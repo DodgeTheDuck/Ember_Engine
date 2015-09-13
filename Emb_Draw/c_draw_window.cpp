@@ -9,7 +9,7 @@ namespace DRAW {
 	Window::Window( TYPE::size_i size ) {
 		_instance = glfwCreateWindow( size.w, size.h, "Ember", NULL, NULL );
 		_size = size;
-		InitInput( this );
+		INPUT::Init( this );
 	}
 
 	void Window::HandleEvents( ) {

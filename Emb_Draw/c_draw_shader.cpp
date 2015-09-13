@@ -94,4 +94,8 @@ namespace DRAW {
 		glUseProgram( _programIndex );
 	}
 
+	uint Shader::GetProgram( ) {
+		return _programIndex;
+	}
+
 }

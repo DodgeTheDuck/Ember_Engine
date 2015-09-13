@@ -5,18 +5,20 @@
 
 namespace DRAW {
 
-	class Camera {
+	class EMB_DRAW_API Camera {
 
 		public:
 		Camera( TYPE::point_f3 position );
-		void Move( float dx, float dy, float dz = 0 );
+		void Move( real dx, real dy, real dz = 0 );
+		void MoveLocal( real angle, real speed );
+		void Rotate( real angle, TYPE::point_f3 axis );
+		void MouseLook( );
 		TYPE::point_f3 GetPosition( );
-		
-		float * GetViewMatrix( );
+		TYPE::point_f3 GetRotation( );
 
 		private:
 		TYPE::point_f3 _position;
-
+		
 	};
 
 }

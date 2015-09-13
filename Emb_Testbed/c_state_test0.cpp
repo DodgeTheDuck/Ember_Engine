@@ -12,11 +12,10 @@
 #include <c_draw_texture.h>
 #include <c_draw_text.h>
 #include <c_draw_input.h>
+#include <c_draw_camera.h>
 
 DRAW::Window * window;
 DRAW::Scene * scene;
-
-float x = 8;
 
 Test0::Test0( ) {
 	Init( );
@@ -24,7 +23,7 @@ Test0::Test0( ) {
 }
 
 void Test0::LoadContent( ) {
-	
+
 	DRAW::TextureCache::Instance( )->Push( new DRAW::Texture( "sprites/font.png", { 6, 8 }, 1 ) );
 	DRAW::TextureCache::Instance( )->Push( new DRAW::Texture( "sprites/grass.png" ) );
 
@@ -50,16 +49,30 @@ void Test0::Tick( ) {
 	if( window->ShouldClose( ) ) {
 		CORE::Engine::Instance( )->Shutdown( );
 	}
-	if( DRAW::Controls::forward ) x -= 0.1;
+
+	if( DRAW::INPUT::Controls::forward ) scene->GetCamera( )->MoveLocal( 0, 0.05 );
+	if( DRAW::INPUT::Controls::backward ) scene->GetCamera( )->MoveLocal( 180, 0.05 );
+	if( DRAW::INPUT::Controls::left ) scene->GetCamera( )->MoveLocal( 270, 0.05 );
+	if( DRAW::INPUT::Controls::right ) scene->GetCamera( )->MoveLocal( 90, 0.05 );
+
 }
 
 void Test0::Draw( ) {
 
+	scene->SetProjection( DRAW::Scene::DRAW_PROJ_PERSP );
 	scene->LoadIdentity( );
-	scene->Translate( { x, 0, -10 } );
-	scene->Rotate( x, { 0, 1, 0 } );
 
-	DRAW::Batcher::Instance( )->Batch( new DRAW::PCube( 1, DRAW::TextureCache::Instance( )->Get( 1 ) ) );
+	for( int i = 0; i < 1; i++ ) {
+		for( int j = 0; j < 1; j++ ) {
+			for( int k = 0; k < 1; k++ ) {
+				if( i == 0 || j == 0 || k == 0 || i == 3 || j == 3 || k == 3 ) DRAW::Batcher::Instance( )->Batch( new DRAW::PCube( { (real) i, (real) j, (real) k }, 0.5, DRAW::TextureCache::Instance( )->Get( 1 ) ) );
+			}
+		}
+	}
+
+	//scene->SetProjection( DRAW::Scene::DRAW_PROJ_ORTHO );
+	//scene->LoadIdentity( );
+	//DRAW::Text( "hello", 4.0 );
 
 	scene->Draw( );
 

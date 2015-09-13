@@ -20,6 +20,7 @@ namespace TYPE {
 		real x;
 		real y;
 		real z;
+		void operator+=( point_f3 rhs ) { x += rhs.x; y += rhs.y; z += rhs.z; };
 	};
 
 	struct EMB_TYPE_API size_i {

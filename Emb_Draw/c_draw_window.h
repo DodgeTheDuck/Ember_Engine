@@ -15,7 +15,6 @@ namespace DRAW {
 		TYPE::size_i GetSize( );
 		GLFWwindow * GetHandle( );
 		void HandleEvents( );
-		void SetKeyCallback( void (*fp) ( void *, int, int, int, int ) );
 		bool ShouldClose( );
 		~Window( );
 		private:

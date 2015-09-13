@@ -28,9 +28,12 @@ namespace DRAW {
 		void Translate( TYPE::point_f3 translation );
 		void Rotate( float degrees, TYPE::point_f3 axis );
 		void LoadIdentity( );
+		float * GetModelMatrix( );
 		void Clear( );
+		Camera * GetCamera( );
 
 		private:
+		e_Projection _currentProj;
 		TYPE::size_i _viewSpace;
 		Shader * _sceneShader;
 		Camera * _camera;
